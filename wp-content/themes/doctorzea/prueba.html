@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main-script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="row grid">
+      <div class="col-6_xs-9">
+        <img src="http://via.placeholder.com/200x32" alt="" />
+      </div>
+      <div class="col-6 sm-hidden">
+        <nav class="site-nav">
+          <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+         </ul>
+         <ul class="navbar-right">
+      <li><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a></li>
+    </ul> <!--end navbar-right -->
+        </nav>
+      </div>
+      <div class="col-6_xs-3 sm-show">
+        <div id="nav-container">
+    			<div id="nav-overlay"></div>
+    			<nav id="nav-fullscreen">
+    			     <ul>
+    			          <li><a href="#">Home</a></li>
+    								<li><a href="#">Blog</a></li>
+    								<li><a href="#">About</a></li>
+    								<li><a href="#">Contact</a></li>
+    					</ul>
+    			</nav>
+    			<a id="nav-toggle">
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    			</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+      <div class="shopping-cart">
+    <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">$2,229.97</span>
+      </div>
+    </div> <!--end shopping-cart-header -->
+
+    <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+        <span class="item-name">Sony DSC-RX100M III</span>
+        <span class="item-price">$849.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+        <span class="item-name">KS Automatic Mechanic...</span>
+        <span class="item-price">$1,249.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+        <span class="item-name">Kindle, 6" Glare-Free To...</span>
+        <span class="item-price">$129.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+    </ul>
+
+    <a href="#" class="button">Checkout</a>
+  </div> <!--end shopping-cart -->
+
+    <section class="call-to-action--1">
+      <div class="landing--sec-1 row">
+        <div class="col-8">
+          <h1>Toma control de lo que necesitas.</h1>
+          <h3>Zea clinica dental te permite saber lo que tienes, y te permite ver más  allá de los demás.</h3>
+          <div class="zeaboton"><a href="">buenas</a></div>
+        </div>
+        <div class="landing--back1"><img src="img/esqueleto.png" /></div>
+      </div>
+    </section>
+    <section class="call-to-action--2">
+    <div class="landing--sec-2 row">
+      <h1>Servicios</h1>
+      <div class="row grid">
+        <div class="col-4_xs-6 text-center"><img src="img/cordales.png" /><h3>Cirugia de cordales</h3></div>
+        <div class="col-4_xs-6 text-center"><img src="img/ortodoncia.png" /><h3>Ortodoncia</h3></div>
+        <div class="col-4_xs-6 text-center"><img src="http://via.placeholder.com/100x100" /><h3>Cordales</h3></div>
+        <div class="col-4_xs-6 text-center"><img src="http://via.placeholder.com/100x100" /><h3>Cordales</h3></div>
+        <div class="col-4_xs-6 text-center"><img src="http://via.placeholder.com/100x100" /><h3>Cordales</h3></div>
+        <div class="col-4_xs-6 text-center"><img src="http://via.placeholder.com/100x100" /><h3>Cordales</h3></div>
+      </div>
+      <div class="zeaboton text-center"><a href="">buenas</a></div>
+      <div class="landing--back2"><img src="img/back.png" /></div>
+    </div>
+    </section>
+    <section class="call-to-action--3">
+      <div class="landing--sec-3 row grid-middle">
+        <div class="col-6_xs-12"><img src="http://via.placeholder.com/1000x400" /></div>
+        <div class="col-6_xs-12">
+          <h6>Historia</h6>
+          <h2>Titulares</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+          <div class="zeaboton"><a href="">haz una cita</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="call-to-action--4">
+      <div class="landing--sec-4 row grid-middle">
+        <div class="col-6_xs-12">
+          <h2>Suscríbete</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+        </div>
+        <div class="col-6_xs-12">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline" type="button"><i class="demo-icon icon-right-big">&#xe803;</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="site-footer">
+    <div class="row grid">
+      <div class="col-3_xs-6">Logo</div>
+      <div class="col-3_xs-6">servicios</div>
+      <div class="col-3_xs-6">redes s</div>
+      <div class="col-3_xs-6"><div class="zeaboton inverted"><a href="">haz una cita</a></div></div>
+    </div>
+    <div class="row grid">
+      <div class="col-6_sm-12">© 2018 Zea clinica dental, derechos reservados.</div>
+      <div class="col-6_sm-12 col_sm-first">Politica de privacidad | Terminos y condiciones</div>
+    </div>
+  </footer>
+  <div class="container">
+    <section class="call-to-action--2">
+    <div class="landing--sec-2 row">
+      <div class="row grid">
+        <div class="col-12">
+          <h1>Servicios</h1>
+        </div>
+        <div class="col-12">
+          <div class="blog">
+            <p>Habia una vez un parrafo que necesitaba ser probado.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi magna, rhoncus ut egestas in, vulputate faucibus lectus. Duis id nulla condimentum, sollicitudin urna id, tempor tortor. In eget varius ex, et ullamcorper nisl. Fusce vitae enim et mauris tempor dapibus eget ac purus. Nulla vel neque sit amet justo lacinia efficitur porta et quam. Suspendisse potenti. Aliquam posuere odio at nulla pharetra vehicula. Morbi vestibulum blandit mattis. Nunc lacus dolor, interdum nec arcu vestibulum, euismod feugiat dolor. Etiam sed nibh eget ex ullamcorper interdum in vel quam. In et nunc et metus molestie finibus quis et sapien. Aliquam sollicitudin enim non convallis pulvinar. Ut iaculis, leo at tristique dignissim, ligula lectus hendrerit augue, a posuere lacus turpis et mauris. Praesent ultrices massa quis velit pretium, at mollis sem rhoncus.
+
+Maecenas semper et libero finibus ornare. Donec hendrerit nisl interdum cursus gravida. Vivamus tristique, ex vel laoreet mattis, dui mi sodales tellus, vel lobortis arcu massa non dui. Proin eleifend est et turpis ultrices, consectetur lobortis arcu semper. Suspendisse quis risus felis. Vivamus tincidunt pellentesque enim, ut efficitur lectus vulputate tristique. Quisque tempus purus id turpis rhoncus, non efficitur enim porta. Praesent volutpat nisi accumsan ullamcorper tincidunt. Sed eu risus eget odio vulputate condimentum in nec lectus. Proin varius scelerisque ullamcorper. Quisque iaculis enim ex, nec elementum augue hendrerit sed. Morbi non nibh vel risus laoreet ultricies vel nec diam. Suspendisse potenti. Nunc at eleifend lorem, bibendum ornare risus. Proin semper rutrum risus, et accumsan dui facilisis a. Morbi pharetra lorem sem, sit amet dictum ante scelerisque quis.</p>
+            <figure>
+              <img src="http://via.placeholder.com/1000x500" alt="The Pulpit Rock">
+              <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+            </figure>
+              <p>Habia una vez un parrafo que necesitaba ser probado.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi magna, rhoncus ut egestas in, vulputate faucibus lectus. Duis id nulla condimentum, sollicitudin urna id, tempor tortor. In eget varius ex, et ullamcorper nisl. Fusce vitae enim et mauris tempor dapibus eget ac purus. Nulla vel neque sit amet justo lacinia efficitur porta et quam. Suspendisse potenti. Aliquam posuere odio at nulla pharetra vehicula. Morbi vestibulum blandit mattis. Nunc lacus dolor, interdum nec arcu vestibulum, euismod feugiat dolor. Etiam sed nibh eget ex ullamcorper interdum in vel quam. In et nunc et metus molestie finibus quis et sapien. Aliquam sollicitudin enim non convallis pulvinar. Ut iaculis, leo at tristique dignissim, ligula lectus hendrerit augue, a posuere lacus turpis et mauris. Praesent ultrices massa quis velit pretium, at mollis sem rhoncus.
+
+  Maecenas semper et libero finibus ornare. Donec hendrerit nisl interdum cursus gravida. Vivamus tristique, ex vel laoreet mattis, dui mi sodales tellus, vel lobortis arcu massa non dui. Proin eleifend est et turpis ultrices, consectetur lobortis arcu semper. Suspendisse quis risus felis. Vivamus tincidunt pellentesque enim, ut efficitur lectus vulputate tristique. Quisque tempus purus id turpis rhoncus, non efficitur enim porta. Praesent volutpat nisi accumsan ullamcorper tincidunt. Sed eu risus eget odio vulputate condimentum in nec lectus. Proin varius scelerisque ullamcorper. Quisque iaculis enim ex, nec elementum augue hendrerit sed. Morbi non nibh vel risus laoreet ultricies vel nec diam. Suspendisse potenti. Nunc at eleifend lorem, bibendum ornare risus. Proin semper rutrum risus, et accumsan dui facilisis a. Morbi pharetra lorem sem, sit amet dictum ante scelerisque quis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="zeaboton text-center"><a href="">buenas</a></div>
+      <div class="landing--back2"><img src="img/back.png" /></div>
+    </div>
+    </section>
+  </div>
+</body>
+</html>
